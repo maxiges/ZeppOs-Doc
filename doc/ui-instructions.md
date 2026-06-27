@@ -76,6 +76,10 @@ Formula: `Math.ceil(x / designWidth * DEVICE_WIDTH)`
 - [GROUP](https://docs.zepp.com/docs/reference/device-app-api/newAPI/ui/widget/GROUP/): Group widgets for unified show/hide and event handling. Cannot be nested.
 - [VIEW_CONTAINER](https://docs.zepp.com/docs/reference/device-app-api/newAPI/ui/widget/VIEW_CONTAINER/): Powerful scrollable container, supports child widgets, z-index, and Swiper mode.
 
+### Dynamic Layouts (API 4.0)
+For Zepp OS 4.0, utilize the new dynamic layout system which supports flexbox and CSS-like properties.
+- [Dynamic Layouts Guide](ui-dynamic_layout.md) - Learn how to use `widget.VIRTUAL_CONTAINER` for responsive UIs in API 4.0.
+
 ## Design & Adaptation
 
 - **Design for:**

@@ -34,5 +34,45 @@ Official Reference: [getApp() Documentation](../../reference/device-app-api/newA
 
 - [UI Instructions](ui-instructions.md) - Guidelines on creating widgets, screen adaptation, and using the `@zos/ui` library.
 - [App Lifecycle & Routing](app-lifecycle-instructions.md) - Instructions on application lifecycle (`App`, `Page`) and page navigation using the router module.
+- [Communication](communication.md) - Guide on watch-phone communication using ZML.
 - [Sensors](sensors-instructions.md) - Best practices for handling sensor data, managing permissions, and resource cleanup.
 - [File System (FS)](fs-instructions.md) - Guidelines on synchronous file operations, file descriptor management, and error handling.
+
+## 1. Runtime Environment
+
+To find these versions, open your `app.json` file and look for the `runtime` -> `apiVersion` section:
+
+```json
+"runtime": {
+  "apiVersion": {
+    "compatible": "3.0",
+    "target": "3.0",    // Target API version
+    "minVersion": "3.0" // Minimum supported version
+  }
+}
+```
+
+- **Zepp OS API Target Version**: [Copy from `target`]
+- **Minimum Supported API Version**: [Copy from `minVersion`]
+- **Compatible API Version**: [Copy from `compatible`]
+
+## 2. Project Configuration
+
+- **App Name**: [Insert App Name]
+- **App ID**: [Insert App ID]
+- **App Type**: [app / watchface]
+
+## 3. Capabilities & Permissions
+
+- **Permissions**:
+  - [Example: data:os.device.info]
+  - [Example: device:os.local_storage]
+
+## 4. UI/Platform Support
+
+- **Supported Platforms**: [e.g., Round, Square]
+- **Layout System**: [e.g., Static / Dynamic Layouts 4.0+]
+
+---
+
+_Note: This information is derived from the `app.json` file in the project root. For more details on `app.json` configuration, refer to the [official documentation](https://docs.zepp.com/docs/reference/app-json/)._
