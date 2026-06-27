@@ -1,0 +1,12 @@
+{
+  "name": "zeppos-doc-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for ZeppOS documentation",
+  "main": "server.js",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "express": "^5.2.1",
+    "js-yaml": "^5.2.0"
+  }
+}
