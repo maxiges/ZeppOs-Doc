@@ -14,7 +14,7 @@ You can find the detailed documentation in the `doc/` directory:
 
 ## MCP Server
 
-This repository includes an MCP (Model Context Protocol) server to allow AI agents to directly access and search the documentation.
+This repository includes an MCP (Model Context Protocol) server to allow AI agents to directly access and search the documentation. The server uses the HTTP/SSE (Server-Sent Events) transport.
 
 ### Setup and Usage
 
@@ -28,20 +28,20 @@ This repository includes an MCP (Model Context Protocol) server to allow AI agen
     ```bash
     node mcp/server.js
     ```
+    The server will start on `http://localhost:3000`.
 
 ### Connecting to AI Agents (e.g., Claude Desktop)
 
-To connect this MCP server to an AI agent that supports MCP (like Claude Desktop), add it to your configuration file (e.g., `claude_desktop_config.json`):
+To connect this MCP server via SSE, add the following configuration to your AI agent's MCP configuration file (e.g., `claude_desktop_config.json`):
 
 ```json
 {
   "mcpServers": {
     "zeppos-docs": {
-      "command": "node",
-      "args": ["<PATH_TO_PROJECT>/mcp/server.js"]
+      "command": "curl",
+      "args": ["-X", "POST", "http://localhost:3000/sse"]
     }
   }
 }
 ```
-
-_Replace `<PATH_TO_PROJECT>` with the absolute path to this project directory._
+*Note: The exact configuration might vary based on your MCP client's capabilities. If your client supports native HTTP/SSE, you may be able to provide the URL `http://localhost:3000/sse` directly.*
