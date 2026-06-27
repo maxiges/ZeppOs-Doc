@@ -33,10 +33,15 @@ Official Reference: [getApp() Documentation](https://docs.zepp.com/docs/referenc
 ## Technical Instructions
 
 - [UI Instructions](ui-instructions.md) - Guidelines on creating widgets, screen adaptation, and using the `@zos/ui` library.
+- [Dynamic Layouts Guide](ui-dynamic_layout.md) - Guide to the dynamic layout system introduced in Zepp OS 4.0.
 - [App Lifecycle & Routing](app-lifecycle-instructions.md) - Instructions on application lifecycle (`App`, `Page`) and page navigation using the router module.
 - [Communication](communication.md) - Guide on watch-phone communication using ZML.
 - [Sensors](sensors-instructions.md) - Best practices for handling sensor data, managing permissions, and resource cleanup.
 - [File System (FS)](fs-instructions.md) - Guidelines on synchronous file operations, file descriptor management, and error handling.
+- [Internationalization (i18n)](i18n-instructions.md) - Guide on multi-language support.
+- [Storage Management](storage-instructions.md) - Guidelines for Local Storage vs File System.
+- [Assets Management](assets-management.md) - Best practices for resources and screen adaptation.
+- [App Manifest Guide](app-manifest-guide.md) - Guide for configuring app.json.
 
 ## 1. Runtime Environment
 
