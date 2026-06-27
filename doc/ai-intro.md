@@ -26,7 +26,7 @@ If you need to share data across different pages:
 - **DO** use the `globalData` object provided by the `App` instance.
 - **Accessing Global Data**: Use `getApp()._options.globalData` to access or modify data shared across the entire application lifecycle.
 
-Official Reference: [getApp() Documentation](../../reference/device-app-api/newAPI/global/getApp.mdx)
+Official Reference: [getApp() Documentation](https://docs.zepp.com/docs/reference/device-app-api/newAPI/global/getApp)
 
 ---
 
@@ -58,6 +58,7 @@ To find these versions, open your `app.json` file and look for the `runtime` -> 
 
 ## 2. Project Configuration
 
+- [App.json Official Reference](https://docs.zepp.com/docs/reference/app-json/) - The official documentation for configuring Zepp OS application manifest properties.
 - **App Name**: [Insert App Name]
 - **App ID**: [Insert App ID]
 - **App Type**: [app / watchface]
