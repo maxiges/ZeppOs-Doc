@@ -15,6 +15,7 @@ This repository contains essential documentation for developing Zepp OS applicat
 - [Sensors Guide](doc/sensors-instructions.md) - Comprehensive guide for utilizing Zepp OS sensor APIs and managing sensor lifecycles.
 - [Storage Management](doc/storage-instructions.md) - Guidelines for Local Storage vs File System.
 - [UI Interactions & Components](doc/ui-instructions.md) - Guidelines for creating responsive user interfaces and managing UI widgets.
+- [ZML Library Guide](doc/zml/README.md) - Documentation for the official ZML library.
 
 ## Core Compliance Checklist for AI Agents
 
